@@ -1,0 +1,3 @@
+[submodule "colors/base16-st"]
+	path = colors/base16-st
+	url = https://github.com/honza/base16-st
