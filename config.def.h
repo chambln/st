@@ -83,32 +83,36 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
+
+/*
+* base16-material-palenight-theme.h
+*
+* Base16: (https://github.com/chriskempson/base16)
+*
+* Authors:
+*
+* Scheme: Nate Peterson
+* Template: Honza Pokorny <me@honza.ca>
+*
+*/
+
 static const char *colorname[] = {
-	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
-
-	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
-
-	[255] = 0,
-
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
+  "#292d3e", /* base00 */
+  "#f07178", /* base08 */
+  "#c3e88d", /* base0B */
+  "#ffcb6b", /* base0A */
+  "#82aaff", /* base0D */
+  "#c792ea", /* base0E */
+  "#89ddff", /* base0C */
+  "#959dcb", /* base05 */
+  "#676e95", /* base03 */
+  "#f78c6c", /* base09 */
+  "#444267", /* base01 */
+  "#32374d", /* base02 */
+  "#8796b0", /* base04 */
+  "#959dcb", /* base06 */
+  "#ff5370", /* base0F */
+  "#ffffff", /* base07 */
 };
 
 
@@ -118,8 +122,8 @@ static const char *colorname[] = {
  */
 unsigned int defaultfg = 7;
 unsigned int defaultbg = 0;
-static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+static unsigned int defaultcs = 13;
+static unsigned int defaultrcs = 0;
 
 /*
  * Default shape of cursor
